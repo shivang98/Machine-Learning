@@ -18,7 +18,7 @@ X[:,1:3] = imputer.transform(X[:,1:3])
 
 # encoding categorical data - because our algo didnt understand words written so 
 # we use labelencoder to encode them to numerics
-# we use onehotencoder because python can think that or features are not categorical i.e
+# we use onehotencoder because python can think that our features are not categorical i.e
 # 0 < 1 < 2 but actually the doesnt have any relation between them
 # so we apply this to create different matrix to solve the problem    
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
